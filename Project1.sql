@@ -52,7 +52,7 @@ VALUES
 	('Steve Rodgers','3585554239','Rodges1@me.com','1','2','12'),
 	('Bob Jones','4655557828','jones@me.com','2','4','13'),
 	('Bob Eiger','6545554235','eiger@me.com','1','1','14'),
-	('Eric Walter','2084736542','ericwalter@my.cwi.edu','1','2','15').
+	('Eric Walter','2084736542','ericwalter@my.cwi.edu','1','2','15'),
 	('Steven Colbert','4525557821','colbert@me.com','2','5','16'),
 	('Don Juan','6545557513','juan@me.com','3','6','17'),
 	('John Grossman','5215556428','grossman@me.com','1','8','18'),
