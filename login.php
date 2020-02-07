@@ -1,32 +1,11 @@
-<!--
-
-Original Author: Eric Walter
-Date Created: 8/20/2019
-Version: 5
-Date Last Modified: 2/7/2020
-Modified by: Eric Walter
-Modification log:Added links to other pages
-added filler text
-
-Changed filler text to real text.
-Added links in text to other pages
-Added favicons
-Added social media links
-added title and description
-
-added webfont link
-
-added link to admin page
--->
-
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <meta name="description" content="Premier Photo Productions, a Boise Idaho local company. We have affordable rates for all our photographs.">
-    <title>Premier Photo Productions</title>
+    <title>Thank you</title>
 <!-- font style -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
 <!-- External Style Sheet -->
@@ -51,11 +30,20 @@ added link to admin page
             <li><a href="login.php">Admin</a></li>
         </ul>
     </nav>
-    <h1>Premier Photo Productions</h1>
+    <h1>Log In</h1>
 
-    <p>Welcome to Premier Photo Productions. We are a small group of photographers from Boise, Idaho.<br/>
-        <br/>Visit our <a href="Gallery.html">gallery</a> to see examples of our work. If you like what you see you can go to our <a href="About.html">about</a> page for pricing details and to find out more.
-    </p>
+    <form name="form1" method="post" action="admin.php">
+        <span id="nameTextField">
+            <label for="username"></label>
+            <input type="text" name="username" id="name" placeholder="Name" required>
+            </br>
+            <span id="passwordspan">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
+                    <span class="textfieldRequiredMsg"></span> 
+                    </br>
+                        <input type="submit" name="Submit" id="Submit" value="Submit">                                                                                                  
+    </form>
 
     <footer>
         &#169; Premier Photo Productions. <br>
@@ -65,3 +53,11 @@ added link to admin page
         <a href="https://www.twitter.com/" target="_blank"><img src="images/iconmonstr-twitter-3-48.png" alt="social icon for twitter"></a>
     </footer>
 </body>
+
+<!---------------------------------------
+
+Date        Name        Description
+
+2/7/2020    EWalter     Created page
+
+---------------------------------------!>

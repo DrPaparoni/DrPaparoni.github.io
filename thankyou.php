@@ -1,5 +1,5 @@
 <?php
-    
+    require('./model/database.php');
     $visitorName = filter_input(INPUT_POST, 'custName');
     $visitorEmail = filter_input(INPUT_POST, 'custEmail');
     $visitorPhone = filter_input(INPUT_POST, 'custPhone');
@@ -14,13 +14,9 @@
         echo "Form Data Error: " . $error; 
         exit();
         } else {
-            $dsn = 'mysql:host=localhost;dbname=photography';
-            $username = 'root';
-            $password = 'Pa$$w0rd';
 
             try {
-                $db = new PDO($dsn, $username, $password);
-
+                $db = Database::getDB();
             } catch (PDOException $e) {
                 $error_message = $e->getMessage();
                 /* include('database_error.php'); */
@@ -53,7 +49,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
     <meta name="description" content="Premier Photo Productions, a Boise Idaho local company. We have affordable rates for all our photographs.">
-    <title>Contact Us</title>
+    <title>Thank you</title>
 <!-- font style -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
 <!-- External Style Sheet -->
@@ -75,6 +71,7 @@
             <li><a href="About.html">About</a></li>
             <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="Orders.html">Orders</a></li>
+            <li><a href="login.php">Admin</a></li>
         </ul>
     </nav>
     <h1>Order Received</h1>
@@ -89,3 +86,10 @@
         <a href="https://www.twitter.com/" target="_blank"><img src="images/iconmonstr-twitter-3-48.png" alt="social icon for twitter"></a>
     </footer>
 </body>
+
+<!---------------------------------------------------------------
+Modification Log
+Date        Name        Description
+
+2/7/2020    EWalter     initial deployment
+---------------------------------------------------------------!>
