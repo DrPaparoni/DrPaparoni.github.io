@@ -1,0 +1,43 @@
+/*
+
+Original Author: Eric Walter
+Date Created: 10/3/2019
+Version: 1
+Date Last Modified: 10/3/2019
+Modified by: Eric Walter
+Modification log: added background and border to canvas
+added text styles
+centered content
+added background color
+
+*/
+
+/*-----Center Content-----*/
+
+html{
+    text-align: center;
+    background-color: gray;
+}
+
+/*-----Canvas Styles------*/
+
+canvas {
+    border:3px solid #000000;
+    background-color: #49b7f7;
+    margin-top: 3%;
+}
+
+/*------Text Styles-----*/
+
+p{
+    font-family: calibri;
+    font-size: 1.5em;
+}
+
+/*-----Button Styles-----*/
+
+button{
+    width: 10%;
+    font-weight: bold;
+    font-size: 20px;
+}

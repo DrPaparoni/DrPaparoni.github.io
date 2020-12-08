@@ -1,0 +1,32 @@
+<!-- 
+
+Original Author: Eric Walter
+Date Created: 10/3/2019
+Version: 1
+Date Last Modified: 10/3/2019
+Modified by: Eric Walter
+Modification log: Created based off of w3schools' example
+created and linked javascript page
+created and linked stylesheet
+added text to explain the rules
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/flap.js" defer></script>  
+</head>
+<body onload="startGame()">
+
+
+<!--  Explains the rules and controls  -->    
+<br>
+<button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">FLAP</button>
+<p>Use the FLAP button to stay in the air</p>
+<p>Avoid the obstacles to raise your score</p>
+<p>How high can you get your score?</p>
+</body>
+</html>
